@@ -1,0 +1,59 @@
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+  border-radius: 100px;
+}
+
+.picker__list-item--disabled {
+  display: none !important;
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  /* padding: 8rem 0 7rem; */
+  padding: 4rem 0 19rem;
+  text-align: center;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+/* BOOTSTRAP TABLE FORMAT
+_____________________________________ */
+td {
+  text-align: left;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .section {
+    /* padding: 12rem 0 11rem; */
+    padding: 4rem 0 19rem;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .section {
+    /* padding: 14rem 0 15rem; */
+    padding: 4rem 0 19rem;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .section {
+    /* padding: 20rem 0 19rem; */
+    padding: 4rem 0 19rem;
+  }
+}
+
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}

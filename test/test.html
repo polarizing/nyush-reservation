@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Test</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://common.olemiss.edu/_js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+	<img id="loading_spinner" src="loading-spinner.gif">
+	<div class="my_update_panel"></div>
+
+	<script>
+		$('#loading_spinner').show();
+		var post_data1 = "my_variable=test";
+		var post_data = {status: 'status1', name: 'name1'};
+		$.ajax({
+		    url: 'test.php',
+		    type: 'POST',
+		    data: post_data,
+		    dataType: 'html',
+		    success: function(data) {
+		        $('.my_update_panel').html(data);
+		//Moved the hide event so it waits to run until the prior event completes
+		//It hide the spinner immediately, without waiting, until I moved it here
+		        $('#loading_spinner').hide();
+		    },
+		    error: function() {
+		        alert("Something went wrong!");
+		    }
+		});
+	</script>
+</body>
+</html>  

@@ -1,0 +1,101 @@
+[
+    {
+        "room_id": 804,
+        "type": "Music Practice Space",
+        "description": "Large, with Drum Set",
+        "open_time": "10:00:00+08:00",
+        "close_time": "22:00:00+08:00",
+        "max_session_length": 60,
+        "calendar_id": "jsh8eakb07hltcb2p5g0qkj0e0@group.calendar.google.com"
+    },
+    {
+        "room_id": 807,
+        "type": "Music Practice Space",
+        "description": "Small, with Piano",
+        "open_time": "10:00:00+08:00",
+        "close_time": "22:00:00+08:00",
+        "max_session_length": 60,
+        "calendar_id": "p5gvmhqb46tmd2ee7c75ra5oeg@group.calendar.google.com"
+    },
+    {
+        "room_id": 808,
+        "type": "Music Practice Space",
+        "description": "Small, with Piano",
+        "open_time": "10:00:00+08:00",
+        "close_time": "22:00:00+08:00",
+        "max_session_length": 60,
+        "calendar_id": "g5sa2m7g9cctn426bu7jt8fh58@group.calendar.google.com"
+    },
+    {
+        "room_id": 1503,
+        "type": "Conference Room",
+        "description": "Large",
+        "open_time": "10:00:00+08:00",
+        "close_time": "22:00:00+08:00",
+        "max_session_length": 60,
+        "calendar_id": "u6l7jkd1862f7u6boslibc08p8@group.calendar.google.com"
+    },
+    {
+        "room_id": 401,
+        "type": "Group Study Room",
+        "description": "Library, Large, Closed-Door",
+        "open_time": "10:00:00+08:00",
+        "close_time": "22:00:00+08:00",
+        "max_session_length": 60,
+        "calendar_id": "u8o5h9k46558b6hg2vjsjlk5q8@group.calendar.google.com"
+    },
+    {
+        "room_id": 402,
+        "type": "Group Study Room",
+        "description": "Library, Medium, Closed-Door",
+        "open_time": "10:00:00+08:00",
+        "close_time": "22:00:00+08:00",
+        "max_session_length": 60,
+        "calendar_id": "ltvm7f1amibgbcehb51bbinalc@group.calendar.google.com"
+    },
+    {
+        "room_id": 403,
+        "type": "Group Study Room",
+        "description": "Library, Medium, Open-Door",
+        "open_time": "10:00:00+08:00",
+        "close_time": "22:00:00+08:00",
+        "max_session_length": 60,
+        "calendar_id": "j9bcq29mrvaqmo8vcfcaa2pevs@group.calendar.google.com"
+    },
+    {
+        "room_id": 404,
+        "type": "Group Study Room",
+        "description": "Library, Medium, Open-Door",
+        "open_time": "10:00:00+08:00",
+        "close_time": "22:00:00+08:00",
+        "max_session_length": 60,
+        "calendar_id": "nopb2fk2hpq7je7ahhvfd3pdso@group.calendar.google.com"
+    },
+    {
+        "room_id": 405,
+        "type": "Group Study Room",
+        "description": "Library, Medium, Open-Door",
+        "open_time": "10:00:00+08:00",
+        "close_time": "22:00:00+08:00",
+        "max_session_length": 60,
+        "calendar_id": "aloqtua6rffc648ll682oqcq28@group.calendar.google.com"
+    },
+    {
+        "room_id": 406,
+        "type": "Group Study Room",
+        "description": "Library, Medium, Open-Door",
+        "open_time": "10:00:00+08:00",
+        "close_time": "22:00:00+08:00",
+        "max_session_length": 60,
+        "calendar_id": "ppdkd11n8li3sjdpqrdl32ugio@group.calendar.google.com"
+    },
+    {
+        "room_id": 407,
+        "type": "Group Study Room",
+        "description": "Library, Medium, Open-Door",
+        "open_time": "10:00:00+08:00",
+        "close_time": "22:00:00+08:00",
+        "max_session_length": 60,
+        "calendar_id": "9v7c5rj7afm7av0nfqdc0m1agc@group.calendar.google.com"
+    }
+]

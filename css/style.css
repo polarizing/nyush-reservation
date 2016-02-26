@@ -1,0 +1,96 @@
+
+
+body {
+	font-family: 'Cantarell', sans-serif;
+	background-color: #E9E9E9;
+	margin:0;
+	padding:0;
+}
+
+#container {
+  margin: 0 auto;
+  width: 960px;
+  padding-bottom: 20px;
+}
+
+#header {
+  height: 60px;
+  text-align: center;
+  background-color:#522e91;
+  top: 0;
+  width: 100%;
+}
+
+#logo {
+	margin-left: 24px;
+}
+.header-logo {
+	float: left;
+	margin:0;
+	padding:0;
+}
+
+.header-logo-image {
+	vertical-align:bottom;
+	height:60px;
+}
+
+#header h1 {
+  font-size: 35px;
+  padding: 10px 0px 10px 0px;
+}
+
+#getSummary {
+font-size: 20px;
+}
+
+table {
+	width: 100%;
+}
+
+#description {
+	font-size: 12px;
+
+}
+th {
+    text-align: left;
+}
+
+#reservation {
+	margin: 30 auto;
+	width: 400px;
+	background-color:#FBFBFB;
+	padding: 20px 20px 20px 20px;
+}
+
+#reservation_title {
+	font-size: 24px;
+}
+
+#formInput {
+	text-align:left;
+	float: left;
+	width:200px;
+}
+
+#inputHolder{
+  overflow: auto;
+  max-width: 100%;
+  background-color: #F4F4F4;
+  margin-top: 20px;
+  padding: 12px 0px 15px 80px;
+}
+
+select[name="byRoomType"] {
+	margin-bottom:5px;
+	margin-top:2px;
+}
+
+table {
+	background-color: #FBFBFB;
+	 padding: 12px 0px 15px 20px;
+}
+
+.hide {
+	font-size: 12px;
+}
