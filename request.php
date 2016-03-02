@@ -65,12 +65,12 @@
 
 <?php
 	$selectRoom = $_REQUEST['byRoomType'];
-
+	$status = $_REQUEST['status'];
 	$date = $_REQUEST['date_input'];
 	$start = $_REQUEST['start_time'];
 	$end = $_REQUEST['end_time'];
-
-	echo $selectRoom, $date, $start, $end;
+	
+	// echo $selectRoom, $date, $start, $end;
 
 	// CONVERT TO RFC3339 TIME FORMAT -- YYYY-MM-DDT00:00:00+08:00
 	function convertDateToRFC($inputDate, $inputTime) {
@@ -91,18 +91,20 @@
 			$key[] = $index;
 		}
 	}
-	print "<div class=\"table-responsive\">";
-	print "<table class=\"table\">";
-		print "<thead>";
-			print "<tr>";
-				print "<th>Room #</th>";
-			 	print "<th>Room Type</th>";
-			 	print "<th>Date Available</th>";
-			 	print "<th>Time Available</th>";
-			 	print "<th>Reserve</th>";
-			 print "</tr>";
-		print "</thead>";
-		print "<tbody>";
+	// print "<div class=\"table-responsive\">";
+	// print "<table class=\"table\">";
+	// 	print "<thead>";
+	// 		print "<tr>";
+	// 			print "<th>Room #</th>";
+	// 		 	print "<th>Room Type</th>";
+	// 		 	print "<th>Date Available</th>";
+	// 		 	print "<th>Time Available</th>";
+	// 		 	print "<th>Reserve</th>";
+	// 		 print "</tr>";
+	// 	print "</thead>";
+	// 	print "<tbody>";
+	
+	$json_data = array();
 	try {
 		for ($x = 0; $x < count($key); $x++) {
 			$getCalID = $allCalID[$key[$x]];
@@ -117,25 +119,34 @@
 				'timeMax' => convertDateToRFC($date, $end), // change to variable
 				'q' => 'Reserved'
 			);
-
+    
 			$results = $service->events->listEvents($getCalID, $optParams);
+			// if cannot find 'q' or 'Reserved' ($results == 0) then print ...
 			if (count($results->getItems()) == 0) {
-				print "<tr>";
-				print "<td>$getRoomID</td>";
-				print "<td>$getRoomType</td>";
-				print "<td>$date</td>"; // change to variable
-				print "<td>$start - $end</td>"; // change to variable
-				print "<td><a href=\"form.php?room=$getRoomID&start=".convertDateToEncodedRFC($date, $start)."&end=".convertDateToEncodedRFC($date, $end)."\">Reserve</a></td>"; // change to variable *note encode of +
-				print "</tr>";
+				array_push($json_data, array($getRoomID, $getRoomType, $date, $start, $end));
+				// foreach ($json_data as $index=>$d) {
+				// 	print $index;
+				// 	foreach ($d as $i=>$da) {
+				// 		print $da;
+				// 	}
+				// }
+				// print "<tr>";
+				// print "<td>$getRoomID</td>";
+				// print "<td>$getRoomType</td>";
+				// print "<td>$date</td>"; // change to variable
+				// print "<td>$start - $end</td>"; // change to variable
+				// print "<td><a href=\"form.php?room=$getRoomID&start=".convertDateToEncodedRFC($date, $start)."&end=".convertDateToEncodedRFC($date, $end)."\">Reserve</a></td>"; // change to variable *note encode of +
+				// print "</tr>";
 			}
 
 		}
 	} catch (Google_Service_Exception $e) {
-		print "<div>Invalid input. Please try again.</div>";
+		// print "<div>Invalid input. Please try again.</div>";
 	}
+	print json_encode($json_data);
 		
-		print "</tbody>";
-	print "</table>";
-	print "</div>";
+	// 	print "</tbody>";
+	// print "</table>";
+	// print "</div>";
 	//YYYY-MM-DDT00:00:00+08:00
 ?>

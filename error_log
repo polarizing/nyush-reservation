@@ -66,3 +66,38 @@ Stack trace:
 [25-Nov-2015 01:02:51 America/New_York] PHP Parse error:  syntax error, unexpected 'print' (T_PRINT) in /home/humahaue/public_html/reservation/action.php on line 139
 [25-Nov-2015 01:42:51 America/New_York] PHP Parse error:  syntax error, unexpected ';' in /home/humahaue/public_html/reservation/index.php on line 118
 [25-Nov-2015 01:42:52 America/New_York] PHP Parse error:  syntax error, unexpected ';' in /home/humahaue/public_html/reservation/index.php on line 118
+[25-Feb-2016 23:10:02 America/New_York] PHP Parse error:  syntax error, unexpected 'print' (T_PRINT) in /home/humahaue/public_html/reservation/index.php on line 252
+[25-Feb-2016 23:10:04 America/New_York] PHP Parse error:  syntax error, unexpected 'print' (T_PRINT) in /home/humahaue/public_html/reservation/index.php on line 252
+[26-Feb-2016 01:00:38 America/New_York] PHP Fatal error:  Uncaught exception 'Google_IO_Exception' with message 'Failed to connect to accounts.google.com port 443: Connection timed out' in /home/humahaue/public_html/reservation/src/Google/IO/Curl.php:115
+Stack trace:
+#0 /home/humahaue/public_html/reservation/src/Google/IO/Abstract.php(136): Google_IO_Curl->executeRequest(Object(Google_Http_Request))
+#1 /home/humahaue/public_html/reservation/src/Google/Auth/OAuth2.php(342): Google_IO_Abstract->makeRequest(Object(Google_Http_Request))
+#2 /home/humahaue/public_html/reservation/src/Google/Auth/OAuth2.php(314): Google_Auth_OAuth2->refreshTokenRequest(Array)
+#3 /home/humahaue/public_html/reservation/index.php(41): Google_Auth_OAuth2->refreshTokenWithAssertion(Object(Google_Auth_AssertionCredentials))
+#4 {main}
+  thrown in /home/humahaue/public_html/reservation/src/Google/IO/Curl.php on line 115
+[26-Feb-2016 11:43:16 America/New_York] PHP Catchable fatal error:  Object of class Google_Service_Calendar_Events could not be converted to string in /home/humahaue/public_html/reservation/request.php on line 122
+[26-Feb-2016 20:10:29 America/New_York] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING) in /home/humahaue/public_html/reservation/request.php on line 126
+[26-Feb-2016 20:10:45 America/New_York] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING) in /home/humahaue/public_html/reservation/request.php on line 126
+[26-Feb-2016 20:10:55 America/New_York] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING) in /home/humahaue/public_html/reservation/request.php on line 126
+[26-Feb-2016 20:14:16 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/humahaue/public_html/reservation/request.php on line 128
+[26-Feb-2016 20:14:16 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/humahaue/public_html/reservation/request.php on line 128
+[26-Feb-2016 20:14:16 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/humahaue/public_html/reservation/request.php on line 128
+[26-Feb-2016 20:14:17 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/humahaue/public_html/reservation/request.php on line 128
+[26-Feb-2016 20:14:17 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/humahaue/public_html/reservation/request.php on line 128
+[26-Feb-2016 20:14:17 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/humahaue/public_html/reservation/request.php on line 128
+[26-Feb-2016 20:14:44 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/humahaue/public_html/reservation/request.php on line 128
+[26-Feb-2016 20:14:44 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/humahaue/public_html/reservation/request.php on line 128
+[26-Feb-2016 20:14:44 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/humahaue/public_html/reservation/request.php on line 128
+[26-Feb-2016 20:14:45 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/humahaue/public_html/reservation/request.php on line 128
+[26-Feb-2016 20:14:45 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/humahaue/public_html/reservation/request.php on line 128
+[26-Feb-2016 20:14:45 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/humahaue/public_html/reservation/request.php on line 128
+[26-Feb-2016 21:28:01 America/New_York] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message 'Error calling POST https://www.googleapis.com/calendar/v3/calendars/p5gvmhqb46tmd2ee7c75ra5oeg%40group.calendar.google.com/events?sendNotifications=true: (400) Invalid value for: Invalid format: "2016-03-15T12:00:00+08:00>Reserve</a></td></tr><tr>..." is malformed at "+08:00>Reserve</a></td></tr><tr>..."' in /home/humahaue/public_html/reservation/src/Google/Http/REST.php:110
+Stack trace:
+#0 /home/humahaue/public_html/reservation/src/Google/Http/REST.php(62): Google_Http_REST::decodeHttpResponse(Object(Google_Http_Request), Object(Google_Client))
+#1 [internal function]: Google_Http_REST::doExecute(Object(Google_Client), Object(Google_Http_Request))
+#2 /home/humahaue/public_html/reservation/src/Google/Task/Runner.php(174): call_user_func_array(Array, Array)
+#3 /home/humahaue/public_html/reservation/src/Google/Http/REST.php(46): Google_Task_Runner->run()
+#4 /home/humahaue/public_html/reservation/src/Google/Client.php(593): Google_Http_REST::execute(Obje in /home/humahaue/public_html/reservation/src/Google/Http/REST.php on line 110
+[28-Feb-2016 02:02:24 America/New_York] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/humahaue/public_html/reservation/dropbox_request.php on line 9
+[28-Feb-2016 02:02:28 America/New_York] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/humahaue/public_html/reservation/dropbox_request.php on line 9
